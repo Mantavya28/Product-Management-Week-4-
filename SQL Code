@@ -1,0 +1,70 @@
+-- Create Developers table
+CREATE TABLE Developers (
+  Year INT,
+  NumberOfDevelopers VARCHAR(20),
+  PRIMARY KEY (Year)
+);
+
+-- Insert data into Developers table
+INSERT INTO Developers (Year, NumberOfDevelopers)
+VALUES
+  (2016, '5.8 million developers'),
+  (2017, '24 million developers'),
+  (2018, '31 million developers'),
+  (2019, '40 million developers'),
+  (2020, '56 million developers'),
+  (2022, '94 million developers');
+
+-- Create Repositories table
+CREATE TABLE Repositories (
+  Year INT,
+  NumberOfRepositories VARCHAR(30),
+  PRIMARY KEY (Year)
+);
+
+-- Insert data into Repositories table
+INSERT INTO Repositories (Year, NumberOfRepositories)
+VALUES
+  (2016, '19.4 million repositories were created'),
+  (2017, '67 million repositories were created'),
+  (2018, '96 million repositories were created'),
+  (2019, '44 million repositories were created'),
+  (2020, '60 million repositories were created'),
+  (2022, '200 million active repositories created');
+
+-- Create Organizations table
+CREATE TABLE Organizations (
+  Year INT,
+  NumberOfActiveOrganizations VARCHAR(30),
+  PRIMARY KEY (Year)
+);
+
+-- Insert data into Organizations table
+INSERT INTO Organizations (Year, NumberOfActiveOrganizations)
+VALUES
+  (2016, '331,000 active organizations were using GitHub'),
+  (2017, '1.5 million active organizations were using GitHub'),
+  (2018, '2.1 million active organizations were using GitHub'),
+  (2019, '2.9 million active organizations were using GitHub');
+
+-- Create Rankings table
+CREATE TABLE Rankings (
+  Rank INT,
+  Organization VARCHAR(30),
+  NumberOfStars VARCHAR(10),
+  PRIMARY KEY (Rank)
+);
+
+-- Insert data into Rankings table
+INSERT INTO Rankings (Rank, Organization, NumberOfStars)
+VALUES
+  (1, 'Microsoft', '1,966,824'),
+  (2, 'Google', '1,581,748'),
+  (3, 'Facebook', '937,764'),
+  (4, 'Apache', '870,199'),
+  (5, 'Alibaba', '677,640'),
+  (6, 'Vuejs', '545,773'),
+  (7, 'Tencent', '442,023'),
+  (8, 'TensorFlow', '436,298'),
+  (9, 'GitHub', '435,699'),
+  (10, 'FacebookSearch', '427,755');
